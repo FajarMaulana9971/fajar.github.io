@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portofolio_With_Bootsrap | Fajar Anwari Maulana</title>
+  </head>
+  <body id="home">
+    <!-- navbar -->
+    <!-- untuk merubah warna background, bisa merubah pada bg. apabila tidak merasa cocok, maka clas bg nya dapat dihapus dan di css manual -->
+    <!-- untuk merubah warna font nya maka pada navbar-dark atau navbar-light -->
+    <!-- apabila pada navbar dark, maka warna font nya akan terang dikarenakan bootsrap menganggap warna navbar gelap sehingga warna font nya dibalik -->
+    <!-- apabila pada navbar light, maka warna font nya akan gelap dikarenakan bootsrap menganggap warna navbar terang sehingga warna font nya dibalik -->
+    <!-- pada navbar menggunakan fixed top agar posisi navbar tetap di atas -->
+    <!-- apabila ingin menambahkan scrolling, maka div atau sect harus menggunakan id lalu ditarik ke href -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-aos="fade-right"
+          >Porto<span>Folio</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- apabila ingin merubah posisinya menjadi tengah bisa menggunakan (margin start)ms-auto dan (margin end)me-auto -->
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          data-aos="fade-left"
+        >
+          <!-- merubah posisi isi navbar di kanan bisa menggunakan ms(margin start) lalu auto. begitupun sebaliknya -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Tentang">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#pendidikan">Pendidikan</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" href="#Project">Project</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- jumbotron -->
+    <!-- jumbotron ini ada pada versi bootstrap v.4 dan merubah yang awalnya div menjadi section -->
+    <!-- tujuan menggunakan class yaitu jumbotron ini tidak perlu diikutkan pada href navbar sehingga tidak perlu id -->
+    <section class="jumbotron text-center">
+      <!-- rounded-circle untuk menjadikan foto lingkaran dan img-thumbnail untuk memberikan border pada sisi gambar -->
+      <img
+        src="/foto_kotak.jpeg"
+        alt="Fajar Anwari Maulana"
+        class="rounded-circle img-thumbnail bg-info-subtle"
+        data-aos="zoom-in-down"
+      />
+      <h1 class="display-4" style="color: #2b2e4a">Fajar Anwari Maulana</h1>
+      <p class="lead">Junior Website Development</p>
+      <!-- svg dibawah berfungsi untuk menambahkan gambar waves yang didapat pada laman browser getwaves.io -->
+      <!-- untuk warna gelombang yang diinginkan, menggunakan warna pada dibawah sect.jumbotron agar warna dapat berbeda -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#CBF1F5"
+          fill-opacity="1"
+          d="M0,160L80,160C160,160,320,160,480,176C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- jumbotron end -->
+
+    <!-- tentang saya -->
+    <section id="Tentang">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Tentang Saya</h2>
+          </div>
+        </div>
+        <!-- seharusnya agar tengah harus menggunakan col 6. tetapi menggunakan col 4. alhasil seharusnya terdapat 3 col. -->
+        <!-- solusi agar ke tengah dapat menggunakan justify content seperti flexbox -->
+        <!-- untuk animasi menggunakan AOS (animate on scroll.io) -->
+        <div
+          class="row justify-content-center fs-6 text-center"
+          data-aos="fade-down"
+          data-aos-duration="10"
+        >
+          <div class="col md">
+            <p style="font-size: 16px">
+              Saya merupakan lulusan dari Universitas Negeri Surabaya dengan
+              jenjang Ahli Madya jurusan Transportasi. Selama perkuliahan, saya
+              menekuni bidang prasarana Transportasi yang meliputi pembangunan
+              jalan raya (perkerasan lentur maupun kaku), pembangunan shelter
+              bus maupun ojek online, efektivitas moda angkutan umum, dan
+              analisa kinerja ruas jalan dengan perhitungan yang mengacu pada
+              MKJI Tahun 1997. Dalam jurusan perkuliahan saya, Transportasi
+              merupakan penggabungan antara bidang Teknik Sipil dan bidang
+              Transportasi sehingga saya belajar banyak mengenai Estimasi Biaya
+              Konstruksi maupun gambar kerja pada suatu bangunan yang meliputi
+              prasarana Transportasi dan bangunan 1 lantai. Untuk saat ini, saya
+              juga sedang tertarik dan mempelajari bidang Front End yang
+              mencakup pengembangan tampilan dan interaksi pada suatu website.
+              Dalam proses pembelajaran, saya banyak dibantu oleh teman, media
+              sosial, kursus online, dan berbagai sumber literasi yang tentunya
+              tidak bisa saya sebutkan satu persatu. Harapan saya kedepannya
+              untuk dapat bergabung dengan perusahaan dibidang IT yang inovatif
+              dan progresif, dimana saya dapat terus mengembangkan keterampilan
+              dan pengetahuan saya dalam bidang teknologi dan menjadi bagian
+              dari tim yang dapat memberikan dampak positif pada dunia digital.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#A6E3E9"
+          fill-opacity="1"
+          d="M0,128L80,160C160,192,320,256,480,266.7C640,277,800,235,960,208C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- tentang saya end -->
+
+    <!-- pendidikan -->
+    <section id="pendidikan">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-4">
+            <h2>Pendidikan</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- untuk breakpoint(pada titik tertentu layar akan berubah) menggunakan medium (lihat bootstrap - breakpoint) -->
+          <div
+            class="col-md-3 text-center mb-3"
+            data-aos="fade-down-right"
+            data-aos-duration="700"
+          >
+            <div class="card h-100">
+              <img
+                src="/img/sd.jpg"
+                class="card-img-top"
+                alt="SD Muhammadiyah 1-2 Taman"
+              />
+              <div class="card-body" style="margin-top: 104px">
+                <h5 class="card-title">SD Muhammadiyah 1-2 Taman, Sidoarjo</h5>
+                <p class="card-text">Bersekolah dari tahun 2007-2013</p>
+                <a
+                  href="https://sdmumtaz.sch.id/"
+                  class="btn btn-primary tombol1"
+                  target="_blank"
+                  >Kunjungi Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mb-3" data-aos="fade-down-right">
+            <div class="card h-100">
+              <img
+                src="/img/smp.jpg"
+                class="card-img-top"
+                alt="SMP Muhammadiyah 4 Gadung"
+              />
+              <div class="card-body" style="margin-top: 96px">
+                <h5 class="card-title">SMP Muhammadiyah 4 Gadung, Surabaya</h5>
+                <p class="card-text">Bersekolah dari tahun 2013-2015</p>
+                <a
+                  href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/909b787d-8d18-e111-a90f-9da472f75733"
+                  class="btn btn-primary tombol2"
+                  target="_blank"
+                  >Kunjungi Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mb-3" data-aos="fade-down-left">
+            <div class="card h-100">
+              <img
+                src="/img/sma.jpg"
+                class="card-img-top"
+                alt="SMA Muhammadiyah 1 Taman"
+              />
+              <div class="card-body">
+                <h5 class="card-title">SMA Muhammadiyah 1 Taman, Sidoarjo</h5>
+                <p class="card-text">Bersekolah dari tahun 2015-2018</p>
+                <p class="card-text">Jurusan Ilmu Pengetahuan Alam</p>
+                <p class="card-text">NIlai Ujian Nasional : 80</p>
+                <a
+                  href="https://ppdb.smam1ta.sch.id/"
+                  class="btn btn-primary tombol3"
+                  target="_blank"
+                  >Kunjungi Website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 text-center mb-3"
+            data-aos="fade-down-left"
+            data-aos-duration="700"
+          >
+            <div class="card h-100">
+              <img
+                src="/img/unesa.jpg"
+                class="card-img-top"
+                alt="Universitas Negeri Surabaya"
+              />
+              <div class="card-body" style="margin-top: 64px">
+                <h5 class="card-title">Universitas Negeri Surabaya</h5>
+                <p class="card-text">Berkuliah dari tahun 2018-2022</p>
+                <p class="card-text">Jenjang Pendidikan : Ahli Madya (D3)</p>
+                <p class="card-text">Jurusan Transportasi</p>
+                <p class="card-text">IPK / <i>GPA</i>: 3,43</p>
+                <a
+                  href="https://www.unesa.ac.id/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Kunjungi Website</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#00ADB5"
+          fill-opacity="1"
+          d="M0,224L80,197.3C160,171,320,117,480,133.3C640,149,800,235,960,250.7C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- pendidikan end -->
+
+    <!-- Project -->
+    <!-- <section id="Project">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-4">
+            <h2>Project</h2>
+          </div>
+        </div> -->
+    <!-- justify content center digunakan agar posisi div col berubah mengingat jumlah project adalah ganjil -->
+    <!-- <div class="row justify-content-center">
+          <div class="col-md-4 text-center mb-3" data-aos="fade-down">
+            <div class="card h-100">
+              <img src="/img/project.jpg" class="card-img-top" alt="project" />
+              <div class="card-body" style="margin-top: 104px">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis officia neque totam, asperiores possimus tempora
+                  enim laudantium praesentium earum ad?
+                </h5>
+                <a
+                  href="https://sdmumtaz.sch.id/"
+                  class="btn btn-primary tombol1"
+                  target="_blank"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-3" data-aos="fade-down">
+            <div class="card h-100">
+              <img src="/img/project.jpg" class="card-img-top" alt="project" />
+              <div class="card-body" style="margin-top: 104px">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis officia neque totam, asperiores possimus tempora
+                  enim laudantium praesentium earum ad?
+                </h5>
+                <a
+                  href="https://sdmumtaz.sch.id/"
+                  class="btn btn-primary tombol1"
+                  target="_blank"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-3" data-aos="fade-down">
+            <div class="card h-100">
+              <img src="/img/project.jpg" class="card-img-top" alt="project" />
+              <div class="card-body" style="margin-top: 104px">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis officia neque totam, asperiores possimus tempora
+                  enim laudantium praesentium earum ad?
+                </h5>
+                <a
+                  href="https://sdmumtaz.sch.id/"
+                  class="btn btn-primary tombol1"
+                  target="_blank"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-3" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/img/project.jpg" class="card-img-top" alt="project" />
+              <div class="card-body" style="margin-top: 104px">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis officia neque totam, asperiores possimus tempora
+                  enim laudantium praesentium earum ad?
+                </h5>
+                <a
+                  href="https://sdmumtaz.sch.id/"
+                  class="btn btn-primary tombol1"
+                  target="_blank"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-3" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/img/project.jpg" class="card-img-top" alt="project" />
+              <div class="card-body" style="margin-top: 104px">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis officia neque totam, asperiores possimus tempora
+                  enim laudantium praesentium earum ad?
+                </h5>
+                <a
+                  href="https://sdmumtaz.sch.id/"
+                  class="btn btn-primary tombol1"
+                  target="_blank"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#00ADB5"
+          fill-opacity="1"
+          d="M0,96L80,112C160,128,320,160,480,165.3C640,171,800,149,960,160C1120,171,1280,213,1360,234.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section> -->
+    <!-- Project End -->
+
+    <!-- kontak saya -->
+    <footer>
+      <div class="foot-head">
+        <h2>Hubungi Saya</h2>
+        <h5 style="padding: 15px 0 15px 0">
+          Anda Dapat Menghubungi Saya Melalui :
+        </h5>
+      </div>
+      <div class="social">
+        <a
+          href="https://wa.me/6289523014473?text=Halo%20bang%20"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="mailto:fajar.anwarimaulana99@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/fajar-maulana-615202265"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- kontak saya end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
