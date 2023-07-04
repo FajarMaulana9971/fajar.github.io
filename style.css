@@ -4,9 +4,10 @@
 
 .navbar .container .navbar-brand{
     font-size: 40px;
-    color: #393E46;
+    color: #001C30;
+    cursor: default;
 }
-.navbar .container span{
+.navbar .container .navbar-brand span{
     color: #F9F7F7;
 }
 
@@ -14,8 +15,8 @@
     background-color: #00ADB5;
 }
 
-.navbar ul li a{
-    color: #393E46;
+.navbar .container .collapse ul li a{
+    color: #001C30;
 }
 
 .jumbotron{
@@ -44,6 +45,7 @@
 
 .tombol1{
     margin-top: 142px;
+    background-color: green;
 }
 
 .tombol2{
@@ -98,4 +100,21 @@ section{
 footer{
     background-color: #00ADB5;
 }
+
+@keyframes vibrate {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  
+footer p .getar {
+    animation: vibrate 0.5s infinite;
+  }
+  
 
