@@ -4,9 +4,10 @@
 
 .navbar .container .navbar-brand{
     font-size: 40px;
-    color: #393E46;
+    color: #001C30;
+    cursor: default;
 }
-.navbar .container span{
+.navbar .container .navbar-brand span{
     color: #F9F7F7;
 }
 
@@ -14,8 +15,8 @@
     background-color: #00ADB5;
 }
 
-.navbar ul li a{
-    color: #393E46;
+.navbar .container .collapse ul li a{
+    color: #001C30;
 }
 
 .jumbotron{
@@ -44,6 +45,7 @@
 
 .tombol1{
     margin-top: 142px;
+    background-color: green;
 }
 
 .tombol2{
@@ -62,33 +64,10 @@ section{
     padding-top: 5rem;
 }
 
-footer{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    padding-top: 80px;
-    background-color: #00ADB5;
-    display: flex;
-    flex-direction: column;
-}
-footer .foot-head{
-    margin-top: 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+#ContactMe{
+    background-color: #71C9CE;
 }
 
-footer p:nth-child(1){
-    font-size: 30px;
-    margin-bottom: 25px;
-    font-weight: bold;
-}
-footer p:nth-child(2){
-    font-size: 20px;
-    /* color: white; */
-    margin-bottom: 25px;
-    font-weight: bold;
-}
 .social{
     display: flex;
     align-items: center;
@@ -117,3 +96,25 @@ footer p:nth-child(2){
     color: #E3FDFD;
     transition: 0.6s;
 }
+
+footer{
+    background-color: #00ADB5;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  
+footer p .getar {
+    animation: vibrate 0.5s infinite;
+  }
+  
+
